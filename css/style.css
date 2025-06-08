@@ -525,6 +525,93 @@ img {
     transform: translateY(-3px);
 }
 
+/* New contact form styles */
+.contact-form-section-from-image {
+    background-color: var(--card-background);
+    padding: 80px 0;
+}
+
+.contact-main-form {
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-row-inputs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-group-input {
+    flex: 1;
+}
+
+.contact-main-form input,
+.contact-main-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.contact-main-form input::placeholder,
+.contact-main-form textarea::placeholder {
+    color: var(--secondary-color);
+}
+
+.contact-main-form input:focus,
+.contact-main-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.btn-send-message-form {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.btn-send-message-form:hover {
+    background-color: var(--link-hover-color);
+    transform: translateY(-2px);
+}
+
+.contact-social-media-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-social-media-links a {
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color var(--transition-speed);
+}
+
+.contact-social-media-links a i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.contact-social-media-links a:hover {
+    color: var(--primary-color);
+}
+
 /* --- Footer --- */
 #footer {
     background-color: var(--card-background);
@@ -595,4 +682,5 @@ img {
     .projects-grid { grid-template-columns: 1fr; } /* Stack projects */
     .contact-links { gap: 1.5rem; }
     .contact-link { font-size: 2rem; }
+    .form-row-inputs { flex-direction: column; }
 }
